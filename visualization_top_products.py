@@ -8,7 +8,7 @@ cloud_config = {
     'secure_connect_bundle': 'secure-connect-ecommerce-db-cql.zip'
 }
 
-with open('ecommerce_db_cql-token.json') as f:
+with open('ecommerce_db_cql_token.json') as f:
     secrets = json.load(f)
 
 auth_provider = PlainTextAuthProvider(secrets["clientId"], secrets["secret"])
